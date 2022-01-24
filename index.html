@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Passinho do Romano</title>
+    </head>
+    <body>      
+        <header>
+            <nav>
+                <a href="https://github.com/FernandaPereira-S" target="_blank"><img src="gitHub.png"></a>
+                <a href="https://www.linkedin.com/in/fernandapereiradasilva/" target="_blank"><img src="linkedin.png"></a>
+            </nav>
+            <h1 class="titulo">Cifra de Cesar e Base 64</h1>
+        </header>
+        <main> 
+            <div id="opcoes">           
+                <select name="escolha" id="opcao">
+                    <option>Selecione</option>
+                    <option value="cesar">Cifra de Cesar</option>
+                    <option value="base64">Base64</option>
+                </select>  
+            </div>   
+
+            <div id="container">
+                <textarea id="texto" cols="40" rows="15" placeholder="Digite aqui" required></textarea>
+                <textarea id="resultado" cols="40" rows="15" disabled></textarea>  
+            </div> 
+
+            <div id="incremento">
+                <input type="number" id="chave" placeholder="00" style="display: none">
+            </div>
+
+            <div id="check">
+                <label for="codificar">
+                    <input type="radio" name="check">Codificar
+                </label>
+                <label for="decodificar">
+                    <input type="radio" name="check">Decodificar
+                </label>
+            </div>
+            
+            <div id="result">
+                <button id="botao">Exibir Resultado</button>        
+            </div>               
+        </main>
+        <footer>
+            <p>Todos os direitos reservados &copy; 2021 Fernanda Pereira</p>
+        </footer>
+        <script src="passinhoDoRomano.js"></script>
+    </body>
+</html>
